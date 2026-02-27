@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:3000/api/books";
+const BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:3000/api/books";
 
 const handleResponse = async (response) => {
     if (!response.ok) {
